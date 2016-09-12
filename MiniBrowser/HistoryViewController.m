@@ -15,7 +15,7 @@
 @implementation HistoryViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad]; 
     
     
     self.historyData = [[NSUserDefaults standardUserDefaults] objectForKey:@"webViewHistory"];

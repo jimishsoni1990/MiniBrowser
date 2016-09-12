@@ -11,6 +11,6 @@
 @interface HistoryViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *historyTable;
-@property (strong, nonatomic) NSArray * historyData;
+@property (strong, nonatomic) NSArray * historyData; 
 
 @end
