@@ -60,8 +60,6 @@
     
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"webViewHistory"]){
         
-        NSLog(@"if");
-        
         history = [[[NSUserDefaults standardUserDefaults] objectForKey:@"webViewHistory"]mutableCopy];
         [history addObject:urlInfo];
         [[NSUserDefaults standardUserDefaults] setObject:history forKey:@"webViewHistory"];
@@ -69,16 +67,12 @@
         
     } else {
         
-        NSLog(@"else");
-        
         history = [[NSMutableArray alloc] init];
         [history addObject:urlInfo];
         [[NSUserDefaults standardUserDefaults] setObject:history forKey:@"webViewHistory"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
     }
-    
-    NSLog(@"%@", history);
     
 }
 
